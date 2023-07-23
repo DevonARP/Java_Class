@@ -40,7 +40,7 @@ public abstract class MiddleMan implements Runnable {
 				 */
 				while (out.size() >= 10) {
 					
-					synchronized(in) { //added
+					synchronized(out) { //added
 						
 						out.remove(9); //added
 	
